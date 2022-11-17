@@ -1,0 +1,10 @@
+<h1>Bookers2 User一覧</h1>
+<% @users.each do |user| %>
+<div>
+  <%= image_tag user.get_profile_image %>
+  <p>：<%= image_tag 'no_image.jpeg' %></p>
+  <p>name：<%= user.name %></p>
+  <p>introduction：<%= user.introduction %></p>
+  <p>ユーザーネーム：<%= post_image.user.name %></p>
+</div>
+<% end %>
